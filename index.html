@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="/css/css.css">
+    <link rel="stylesheet" href="css.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="inciar.html">
     <title>Daniel álvarez Ramírez</title>
@@ -27,10 +27,10 @@
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/img/4090.jpg" alt="RTX 4090" class="d-block" style="width:60%" style="height: 120%;">
+        <img src="/img/4090.jpg" alt="RTX 4090" class="d-block" style="width:100%">
       </div>
       <div class="carousel-item">
-        <img src="/img/4080.jpg" alt="RTX 4080" class="d-block" style="width:60%" style="height: 120%;" >
+        <img src="/img/4080.jpg" alt="RTX 4080" class="d-block" style="width:100%">
       </div>
     </div>
     
@@ -44,7 +44,7 @@
   </div>
 
   <div class="container-fluid mt-3">
-
+    
     <!-- nav general -->
 
     <nav id="buscador" class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -65,12 +65,15 @@
               <a class="nav-link" target="_blank" href="https://es.wikipedia.org/wiki/Resoluci%C3%B3n_4K">4K</a>
             </li>
             <li>
-              <a class="" href="/hmtl/inciar.html">Iniciar Sesión</a>
+              <a id="log" class="badge bg-success" target="_blank" href="inciar.html">Iniciar Sesión</a>
+              
             </li>
+            
+            
           </ul>
           <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-primary" type="button">Search</button>
+            <input class="form-control me-2" type="text" placeholder="Buscar">
+            <button class="btn btn-primary" type="button">Buscar</button>
           </form>
         </div>
       </div>
@@ -79,6 +82,8 @@
     <div class="container-fluid mt-3">
       
     </div>
+
+    
 
     <!-- Spinners
 
@@ -93,10 +98,8 @@
   </div>
 
     <div class="container mt-3">
-        <h2 id="cdp">Comparador de precios y rendimiento</h2>
         <br>
         <div id="PC" class="btn-group">
-          <button type="button" class="btn btn-primary">PCcomponentes<a href="https://www.pccomponentes.com/"></a></button>
           <div class="btn-group"></div>
           <div class="btn-group">
             <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">AMD</button>
@@ -117,6 +120,10 @@
       </div>
 
       <hr>
+      <div class="">
+        <h3>Podemos observar como la diferencia de FPS entre 60 y 144 es muy considerable, en cambio de 144 a 240 no se nota apenas la fluidez</h3>
+        <iframe id="video" autoplay="autoplay" src="https://tech-society.com/wp-content/uploads/2019/07/giphy.gif" height="400" width="800" title="fpsdiferencia"></iframe>
+    </div>
     
     <div class="container mt-3">
         <h2>Grafica de media jugando a varios juegos a resolución 4K</h2>
@@ -124,7 +131,7 @@
           <h1>¿Cual sera la mejor opción?</h1> 
           <p>Para jugar en 4K 144 FPS, cual es la mejor opción?</p> 
         </div>
-      </div>      
+      </div>
 
       <div class="container mt-3">
         <h2>Mas es mejor</h2>
@@ -184,26 +191,112 @@
           <br>
           <h5>RTX 4080</h5>
           <div class="progress">
-            <div class="progress-bar" style="width:70%">1500€</div>
+            <div class="progress-bar bg-success" style="width:70%">1500€</div>
           </div>
 
           <br>
           <h5>RTX 4070 Ti</h5>
           <div class="progress">
-            <div class="progress-bar" style="width:55%">1200€</div>
+            <div class="progress-bar bg-info" style="width:55%">1200€</div>
           </div>
 
           <br>
           <h5>RTX 4070</h5>
           <div class="progress">
-            <div class="progress-bar" style="width:40%">800€</div>
+            <div class="progress-bar bg-warning" style="width:40%">800€</div>
           </div>
 
           <br>
           <h5>RTX 3090 Ti</h5>
           <div class="progress">
-            <div class="progress-bar" style="width:60%">1300€</div>
+            <div class="progress-bar bg-danger" style="width:60%">1300€</div>
           </div>
+        </div>
+
+        <hr>
+
+        <!-- Tabla 4K -->
+
+        <div class="container mt-3">
+          <h2>Resumen en resolución 4K</h2>            
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>GPU</th>
+                <th>Rendimiento</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4090</td>
+                <td>122%</td>
+                <td>2000€</td>
+              </tr>
+              <tr>
+                <td>4080</td>
+                <td>96%</td>
+                <td>1500€</td>
+              </tr>
+              <tr>
+                <td>4070 Ti</td>
+                <td>85%</td>
+                <td>1200€</td>
+              </tr>
+              <tr>
+                <td>4070</td>
+                <td>75%</td>
+                <td>900€</td>
+              </tr>
+              <tr>
+                <td>3090 Ti</td>
+                <td>80%</td>
+                <td>1300€</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tabla 2K-->
+
+        <div class="container mt-3">
+          <h2>Resumen en resolución 2K</h2>            
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>GPU</th>
+                <th>Rendimiento</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4090</td>
+                <td>150%</td>
+                <td>2000€</td>
+              </tr>
+              <tr>
+                <td>4080</td>
+                <td>107%</td>
+                <td>1500€</td>
+              </tr>
+              <tr>
+                <td>4070 Ti</td>
+                <td>94%</td>
+                <td>1200€</td>
+              </tr>
+              <tr>
+                <td>4070</td>
+                <td>85%</td>
+                <td>900€</td>
+              </tr>
+              <tr>
+                <td>3090 Ti</td>
+                <td>98%</td>
+                <td>1300€</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
       <!-- Opciones
